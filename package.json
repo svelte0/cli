@@ -1,6 +1,6 @@
 {
 	"name": "@svelte0/cli",
-	"version": "0.0.15",
+	"version": "0.0.17",
 	"description": "svelte0 CLI.",
 	"bin": "./build/main.js",
 	"exports": "./build/main.js",

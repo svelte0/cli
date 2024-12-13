@@ -24,7 +24,9 @@ async function cli() {
 		const projectName = DEV
 			? "projectName"
 			: (await inquirer.prompt({ name: "data", type: "input", message: "Give your project a name to output command to initialize one.", default: "svelte-project" })).data;
-		const cliCommand = DEV ? `npm i lucide-svelte && cd .. && bun src/main.ts ${projectId} && cd ${projectName}` : `npm i lucide-svelte && npx @svelte0/cli@latest ${projectId}`;
+		const cliCommand = DEV
+			? `npm i lucide-svelte bits-ui@next && cd .. && bun src/main.ts ${projectId} && cd ${projectName}`
+			: `npm i lucide-svelte bits-ui@next && npx @svelte0/cli@latest ${projectId}`;
 		console.error(
 			`Run: npx sv create ${projectName} --no-install --template minimal --types ts && cd ${projectName} && npx sv add tailwindcss --no-install && npm i && npx shadcn-svelte@next init && ${cliCommand}`
 		);
