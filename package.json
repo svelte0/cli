@@ -1,0 +1,22 @@
+{
+	"name": "@svelte0/cli",
+	"version": "0.0.15",
+	"description": "svelte0 CLI.",
+	"bin": "./build/main.js",
+	"exports": "./build/main.js",
+	"files": [
+		"./build"
+	],
+	"keywords": [
+		"svelte0",
+		"svelte",
+		"AI"
+	],
+	"author": "svelte0",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"inquirer": "^12.2.0",
+		"ora": "^8.1.1"
+	}
+}

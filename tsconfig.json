@@ -1,0 +1,12 @@
+{
+	"include": ["./src/**/*"],
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"target": "es2017",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"declaration": true,
+		"outDir": "./build",
+		"strict": true
+	}
+}
